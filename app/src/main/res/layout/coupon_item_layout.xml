@@ -2,15 +2,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    android:background="#FFFFFF"
+    android:layout_marginBottom="8dp"
     android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/section"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#000000">
+        android:background="#d3d3d3"
+        android:layout_marginBottom="8dp">
 
         <TextView
             android:id="@+id/sectionName"
@@ -21,30 +21,34 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-
-    <ImageView
-        android:id="@+id/brandImg"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_below="@+id/section"
-        android:layout_margin="16dp"
-        android:src="@mipmap/ic_launcher" />
-
-    <TextView
-        android:id="@+id/brandName"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/section"
-        android:layout_marginTop="16dp"
-        android:layout_toRightOf="@+id/brandImg"
-        android:text="Shashank" />
+        android:background="#FFFFFF">
 
-    <TextView
-        android:id="@+id/brandDesc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/brandName"
-        android:layout_marginTop="16dp"
-        android:layout_toRightOf="@+id/brandImg"
-        android:text="Offer" />
+        <ImageView
+            android:id="@+id/brandImg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="16dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/brandName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/brandImg"
+            android:text="Shashank" />
+
+        <TextView
+            android:id="@+id/brandDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/brandName"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/brandImg"
+            android:text="Offer" />
+    </RelativeLayout>
 </RelativeLayout>
